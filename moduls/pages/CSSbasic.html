@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Basico</title>
+    <link rel="stylesheets" href="style.css">
 </head>
 <body>
 
+<p> CSS es un lenguaje de estilos que controla la presentación y el diseño de los documentos web escritos con HTML, funciona con una metodologia de cascada, lo que significa que lo nuevo sobreescribe los nuevos estilos. y los buscadores siempre buscaran los estilos mas especificados.</p>
+
+.parrafo { <br>
+    ... <br>
+} <br><br>
+
+.article .parrafo { <br>
+    ... <br>
+}
+
+
+
+<p>Tambien funciona con herencias, es decir, que los nuevos estilos heredan los antiguos dependiendo de como esten 
+
+<h3>estilos de aplicación</h3>
+
+<P>Pequeñas partes del CSS se pueden aplicar directamente a una etiqueta del HTML, como:</p>
+
+&lt;p style="color: red; font-size 20px;">A este texto &lt;/p>
+
+<p>aunque es una aplicación rapida y directa a un texto, no se puede reutilizar y requiere cambiar manualmente cada linea en caso de algun cambio.</p>
+
+<p>Un CSS incrustado, se puede agregar dentro de la etiqueta &lt;Style> en la sección &lt;head> del HTML, aunque es puede llegar a ser mas eficiente, solo es aplicable para una sola pagina.</p>
+
+<p>Y finalmente una hoja de estilos externa (stylesheets), es un enlace separado del HTML que almacena un archivo unico de CSS, y aunque en el caso de que el archivo CSS tenga algun inconveniente, los estilos se puden reutilar en diversas paginas, facilita la separación de contenidos.</p>
+
+<h3>¿Como funciona CSS?</h3>
+
+<p>CSS tiene una sintaxis basica, en la cual se indica un elemento dentro del HTML al cual se le quiera agregar un estilo y, luego dentro se le agregan las propiedades.</p>
+
+<P>
+
+p { <br>
+    color; red <br>
+    background-color;green<br>
+    width; 100%<br>
+}
+
+<p> primero esta para seleccionar etiquetas como "h1", "P", "article" etc..., el cual aplicara a todas las etiquetas de la pagina, luego estan las clases, que se seleccionan con .class en el CSS, y se asignan con el atributo class en HTML.</p>
+
+<p>Luego con los id's, los cuales se asignan y funcionan igual que las clases, aunque no se pude usar para varios elementos, solo uno.</p>
+
+<p>Y finalmente los indicadores universales, funcionan colocando un *, y normalmente se utilizan al unicio del css para agregar un margen y padding 0.</p>
+
+* { <br>
+margin: 0; <br>
+padding: 0; <br>
+}
+
+</P>
 </body>
 </html>
